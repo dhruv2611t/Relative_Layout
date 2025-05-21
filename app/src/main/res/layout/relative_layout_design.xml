@@ -1,7 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-</LinearLayout>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/header_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_bottom_bg"
+        android:gravity="center"
+        android:padding="12dp"
+        android:paddingVertical="5dp"
+        android:text="Location Details"
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_right_arrow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_alignEnd="@id/header"
+        android:layout_margin="15dp"
+        android:background="@drawable/circle_background"
+        android:padding="8dp"
+        android:text="@string/dt"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_image"
+        android:layout_alignParentStart="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/border_rounded"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:text="Location"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/button_toggle"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_image"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:text="Reviews"
+        android:textColor="@color/header"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/horizontal_row"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/button_toggle"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/header" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontal_row"
+        android:layout_margin="15dp"
+        android:text="LOWESTOFT"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/three_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontal_row"
+        android:layout_alignParentEnd="true"
+        android:layout_marginVertical="15dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/ic_accessibility" />
+
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontal_row"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="15dp"
+        android:layout_toStartOf="@id/three_dot"
+        android:src="@drawable/ic_accessibility" />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontal_row"
+        android:layout_marginVertical="15dp"
+        android:layout_toStartOf="@id/heart"
+        android:src="@drawable/ic_accessibility" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heart"
+        android:layout_marginHorizontal="15dp"
+        android:text="Bannatyne Health club and spa 2 peto wasy"
+        android:textColor="@color/header"
+        android:textFontWeight="500"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/second_id"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_marginHorizontal="15dp"
+        android:text="NR32 2ED"
+        android:textColor="@color/header"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_id"
+        android:layout_marginHorizontal="15dp"
+        android:text="(paking charges may apply)"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_toEndOf="@id/second_id"
+        android:text="64,345.00 miles"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment"
+        android:layout_marginHorizontal="15dp"
+        android:text="More detail"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment"
+        android:layout_toEndOf="@id/more_detail"
+        android:paddingTop="5dp"
+        android:src="@drawable/ic_right_arrow_black" />
+
+    <View
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/more_detail"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_border_shadow" />
+
+    <TextView
+        android:id="@+id/card_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/card"
+        android:layout_alignTop="@id/card"
+        android:layout_margin="12dp"
+        android:text="LOWESTOFT 1"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/card"
+        android:layout_alignEnd="@id/card"
+        android:layout_margin="12dp"
+        android:background="@color/white"
+        android:paddingHorizontal="10dp"
+        android:text="Available"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/first_card"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/card_title"
+        android:layout_alignStart="@id/card"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_shadow_white" />
+
+    <View
+        android:id="@+id/second_card"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/card_title"
+        android:layout_margin="15dp"
+        android:layout_toEndOf="@id/first_card"
+        android:background="@drawable/rounded_shadow_white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_card"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_shadow_white"
+        android:gravity="center"
+        android:paddingVertical="20dp"
+        android:text="Hold to Charge"
+        android:textSize="20sp" />
+
+</RelativeLayout>
